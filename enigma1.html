@@ -1,0 +1,225 @@
+<!DOCTYPE HTML>
+<!--
+	Verti by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+	<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+	<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-LN1GFX018X"></script>
+	
+		<link rel="shortcut icon" href="images/LogoARSEF3.png">
+		<title>ARSEF</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	<title>Enigma 1</title>
+    <style>
+      .enigma-container {
+        display: flex;
+        align-items: center;
+        margin: 20px;
+      }
+      .enigma-image {
+        margin-right: 500px;
+      }
+      .enigma-title {
+        font-size: 40px;
+        margin: 0;
+      }
+	  .line {
+        height: 3px;
+        background-color:  #eaeded  ;
+        margin: 20px auto;
+        width: 1450px;
+      }
+    </style>
+	</head>
+	<body class="is-preload enigma1">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header-wrapper">
+					<header id="header" class="container">
+
+						<!-- Logo -->
+							<a href="#" style = "position:relative; left:-50px; top:-40px"; class="image featured"><img src="images/LogoARSEF2.png" alt=""style="width:203px;height:90px;" /></a>
+
+						<!-- Nav -->
+							<!-- Nav -->
+							<nav id="nav">
+								<ul>
+									<li class="current" class="nav-link js-scroll-trigger active"><a href="index.html">Home</a></li>
+									<li><a href="le-club.html">Le Club</a></li>
+									<li>
+										<a href="#">Nos Projets</a>
+										<ul>
+											<li><a href="table-de-tir.html"><B>Table de Tir</B></a></li>
+											<li><a href="#"><B><I><FONT color="2745d1">Nos Fusées:</FONT></I></B></a></li>
+											<li><a href="enigma1.html"><B>Enigma 1</B></a></li>
+											<li><a href="enigma2.html"><B>Enigma 2</B></a></li>
+											<!--<li>
+												<a href="#">Nos Fusées</a>
+												<ul>
+													<li><a href="#">Enigma 1</a></li>
+													<li><a href="#">Enigma 2</a></li>
+													<li><a href="#">Magna phasellus</a></li>
+													<li><a href="#">Etiam dolore nisl</a></li>
+												</ul>
+											</li>
+											<li><a href="#">Veroeros feugiat</a></li>-->
+										</ul>
+									</li>
+									<!--<li><a href="le-club.html">L'équipe</a></li>-->
+									<li><a href="contact.html">Nous contacter</a></li>
+									<li><a href="partenaires.html">Nos partenaires</a></li>
+								</ul>
+							</nav>
+
+					</header>
+				</div>
+
+			<!-- Main -->
+				<div id="main-wrapper" style = "position:relative; top:-80px">
+					<div class="enigma-container">
+					<img src="images/Enigma.jpg" style = "position:relative; left:40px; top:-70px " alt="Enigma" class="enigma-image" width="350" height="350">
+					<h1 class="enigma-title"style = "position:relative; top:-40px ">Énigma 1</h1>
+				</div>
+					<div class="container">
+						<div id="content">
+
+							<!-- Content -->
+								<article>
+								<div class="line"style = "position:relative; top:-70px "></div>
+							
+									<div style = "position:relative; top:20px; left:80px">
+									<p>Éngima 1 est la première fusée lancée, elle a décollé le 29 Octobre 2022  </p>
+									</div>
+
+									<div style = "position:relative; top:100px">
+										<div style = "position:relative; left:40px" >
+										<h3>Reprenons depuis le début</h3>
+										</div>
+									<p>Enigma 1 est une fusée de 80cm de haut, dans les 800g une fois chargé en carburant. Elle 
+									est constituée d'un corps en carton peint, d'ailerons en contreplaqué, de pièces imprimés en 
+									3d comme l'ogive, le support de caméra, ou encore un ordinateur de bord en arduino, un moteur 
+									en tube PVC. On va revenir plus en détail sur chaque partie juste en dessous. De plus, de nombreuses 
+									photos de la fabrication, des tests et du jour J sont disponibles entre les différents paragraphes. </p>
+									
+										<div style = "position:relative; left:40px" >
+											<h3>1/ Le Moteur</h3>
+											</div>
+									<p>Le moteur a été conçu à partir d'un tube en PVC de 32mm pour 30cm de long, une tuyère en résine 
+									polyester et un peu de sable très fin (silice) pour améliorer la résistance thermique, le tout coulé
+									dans un moule imprimé en 3D. Il était chargé de 180g de Rocket Candy (KNSU pour les intimes) répartis
+									en 3 pains. Il a développé un peu plus de 125 Newtons de poussée (~12.5kg)  </p>
+									
+										<div style = "position:relative; left:40px" >
+											<h3>2/ L'ordinateur de bord</h3>
+											</div>
+									
+									
+									<p>Dans cette fusée était embarqué Helios 1.0, la 1ère version de mon ODB, il était muni d'un Baromètre,
+									un GPS, un lecteur de carte SD, le tout controlé par une arduino Nano</p>
+									<p>Son fonctionnement était simple, à l'aide du Baromètre, il calcule en temps réel (une quinzaine de 
+									fois par secondes)l'altitude exacte de la fusée. Si jamais il trouve une valeur d'altitude plus faible que
+									la précédente, alors c'est que la fusée à atteint son appogée, il est donc temps d'ouvrir le parachute.
+									Les données GPS étaient elles uniquement écrit avec les valeurs du Baromètre sur la carte SD.</p>
+									<p>Malheureusement un problème est survenu au niveau de l'alimentation pendant l'installation et à rendu
+									hors service l'intégralité de l'électronique comdamnant au passage la fusée.</p>
+									</div>
+
+								</article>
+
+						</div>
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<div id="footer-wrapper"; style = "position:relative; top:200px">
+					<footer id="footer" class="container">
+						<div class="row">
+							<div class="col-3 col-6-medium col-12-small">
+
+								<!-- Links -->
+									<section class="widget links">
+										<h3>Ressources</h3>
+										<ul class="style2">
+											<li><a href="#">Protection des données</a></li>
+											<li><a href="#">&copy; Copyright</a></li>
+											<li><a href="#">Conditions Générales</a></li>
+											<li><a href="#">Mentions Légales</a></li>
+										</ul>
+									</section>
+
+							</div>
+							<div class="col-3 col-6-medium col-12-small">
+
+								<!-- Links -->
+									<section class="widget links">
+										<h3>Ressources</h3>
+										<ul class="style2">
+											<li>un conseil: l'UX est bien</li>
+											<li>meilleure sur un PC que sur mobile </li>
+											
+											
+											
+										</ul>
+									</section>
+
+							</div>
+							<div class="col-3 col-6-medium col-12-small">
+
+								<!-- Links -->
+									<section class="widget links">
+										<h3>Ressources</h3>
+										<ul class="style2">
+											<li><a href="#">Centre d'assistance</a></li>
+											<li><a href="#">Une erreur? un pb technique?</a></li>
+											<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">easter egg</a></li>		
+										</ul>
+									</section>
+							</div>
+							<div class="col-3 col-6-medium col-12-small">
+
+								<!-- Contact -->
+									<section class="widget contact last">
+										<h3>Nous Contacter</h3>
+										<B><a href="contact.html"; style = "position:relative; top:-15px" >Contact</a></B>
+										<ul>
+											<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+											<li><a href="https://discord.gg/RQqZWavY2r" class="icon brands fa-discord"><span class="label">Discord</span></a></li>
+											<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+											<li><a href="https://www.youtube.com/@ARSEF76" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
+											<li><a href="#" class="icon brands fa-github"><span class="label">github</span></a></li>
+										</ul>								
+									
+										Normandie, France<br />										
+									</section>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12">
+								<div id="copyright">
+									<ul class="menu">
+										<li>&copy;Copyright. All rights reserved, ARSEF 2023</li><li>Design: <a href="http://html5up.net">HTML5 UP </a> et HorizonGa11</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</footer>
+				</div>
+			</div>
+
+		<!-- Scripts -->
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
